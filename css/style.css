@@ -504,12 +504,13 @@ p {
 }
 
 h1,
-.logo {
+.logo h1 {
     font-family: CuprumRegular, Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: 300;
     line-height: auto;
     text-transform: uppercase;
+    margin: 0px;
 }
 
 .logo {
@@ -550,6 +551,7 @@ h4 {
     font-family: CuprumRegular, Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #ee3643;
+    margin: 0;
 }
 
 .contact p {
@@ -599,7 +601,9 @@ h4 {
 .future button,
 .pay a,
 .pay button,
-.title a
+.title a,
+.main-navigation a,
+.search p
  {
   font-family: CuprumRegular, Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -617,7 +621,7 @@ h4 {
 .container {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing: border-box;
 }
 
@@ -626,9 +630,137 @@ nav {
   height: 42px;
   background-color: #293449;
   display: inline-block;
+  padding-left: 130px;
+  box-sizing: border-box;
 }
 
-ul {
-  margin: 0px;
+.main-navigation ul li{
+  display: inline-block;
+  position: relative;
 }
 
+.main-navigation ul {
+  margin: 0;
+  padding: 0px;
+}
+
+.logo {
+  width: 220px;
+  height: 42px;
+  background-color: #ee3643;
+  text-align: center;
+  border-bottom: 5px solid #b52933;
+}
+
+.logo h1 {
+  margin 0px;
+}
+
+.main-navigation li:last-child a {
+width: 150px;
+height: 40px;
+background-color: #63a63e;
+display: block;
+text-align: center;
+line-height: 3;
+}
+
+.main-navigation li a {
+  height: 40px;
+  background-color: #63a63e;
+  display: block;
+  text-align: center;
+  line-height: 3;
+  background-color: #293449;
+}
+
+.tab a,
+.basket a {
+  padding-left: 28px;
+}
+
+.tab a:after{
+  position: absolute;
+  content: "";
+  display: block;
+  height: 15px;
+  width: 15px;
+  background-image: url(../images/icon-bookmark.png);
+  top: 13;
+  left: 0;
+}
+
+.basket a:after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 15px;
+  width: 15px;
+  background-image: url(../images/cart-icon.png);
+  top: 13;
+  left: 0;
+}
+
+.search p:after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 17px;
+  width: 17px;
+  background-image: url(../images/icon-search.png);
+  top: 13;
+  left: 0;
+}
+
+.search p{
+  padding-left: 30px;
+}
+
+#search {
+  width: 150px;
+  background-color: #293449;
+  border: 0px;
+  color: white;
+}
+
+.search {
+  margin-left: 18px;
+}
+
+.tab {
+  margin-left: 58px;
+  margin-right: 37px;
+}
+
+.basket {
+  margin-right: 37px;
+}
+
+header .control {
+  display: flex;
+  height: 160px;
+  width: 1200px;
+  border: solid 1px;
+  background-color: #f4f7f9;
+  padding-top: 50px;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+
+header .menu {
+  display: flex;
+  height: 87px;
+  width: 1200px;
+  border: solid 1px;
+  background-color: #f4f7f9;
+}
+
+.control .description {
+  width: 200px;
+}
+
+.control .description,
+.contact,
+.login {
+  float:left;
+}
