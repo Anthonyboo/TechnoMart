@@ -491,7 +491,7 @@
 }
 
 body {
-    background-color: #e2e2e2;
+    /* background-color: #e2e2e2; */
 }
 
 p {
@@ -667,7 +667,6 @@ line-height: 3;
 
 .main-navigation li a {
   height: 40px;
-  background-color: #63a63e;
   display: block;
   text-align: center;
   line-height: 3;
@@ -729,7 +728,7 @@ line-height: 3;
 
 .tab {
   margin-left: 58px;
-  margin-right: 37px;
+  margin-right: 35px;
 }
 
 .basket {
@@ -739,20 +738,10 @@ line-height: 3;
 header .control {
   display: flex;
   height: 160px;
-  width: 1200px;
-  border: solid 1px;
-  background-color: #f4f7f9;
   padding-top: 50px;
   padding-left: 50px;
   box-sizing: border-box;
-}
-
-header .menu {
-  display: flex;
-  height: 87px;
-  width: 1200px;
-  border: solid 1px;
-  background-color: #f4f7f9;
+  height: 150px;
 }
 
 .control .description {
@@ -763,4 +752,102 @@ header .menu {
 .contact,
 .login {
   float:left;
+}
+
+.menu ul {
+  display: flex;
+  width: 940px;
+  height: 55px;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu li{
+  flex-wrap: nowrap;
+}
+
+.menu li:first-child{
+  flex-wrap: nowrap;
+  padding-left: 55px;
+}
+
+.menu ul a {
+  display: inline-block;
+  width: 55px;
+  background-color: #32425c;
+  padding: 18px 31px 17px;
+}
+
+header .container {
+  width: 940px;
+  background-color: #f3f7f8;
+}
+
+.control .description,
+.control .contact {
+  margin-right: 70px;
+}
+
+.menu {
+  margin: 0px;
+}
+
+.contact a:after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 19px;
+  width: 19px;
+  background-image: url(../images/icon-phone.png);
+  top: 9px;
+  left: 14px;
+}
+
+.contact a {
+  position: relative;
+  width: 270px;
+  height: 45px;
+  border: 5px solid white;
+  padding-left: 72px;
+  display: block;
+  box-sizing: border-box;
+  line-height: 2;
+}
+
+.contact p{
+  text-align: center;
+}
+
+.login{
+  width: 282px;
+}
+
+.login a:first-child {
+  float: left;
+  position: relative;
+  width: 121px;
+  height: 45px;
+  /* border: 5px solid white; */
+  background-color: white;
+  display: block;
+  box-sizing: border-box;
+  line-height: 2;
+  text-align: center;
+}
+
+.login a:last-child {
+  margin-left: 9px;
+  float: left;
+  position: relative;
+  width: 150px;
+  height: 45px;
+  /* border: 5px solid white; */
+  background-color: white;
+  display: block;
+  box-sizing: border-box;
+  line-height: 2;
+  text-align: center;
 }
