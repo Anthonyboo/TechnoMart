@@ -851,3 +851,100 @@ header .container {
   line-height: 2;
   text-align: center;
 }
+
+.future {
+  position: relative;
+  padding-left: 25px;
+  padding-top: 1px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 123px;
+  background-color: lightgray;
+
+}
+
+.future button{
+  width: 123px;
+  height: 37px;
+  background-color: grey;
+  border: 0px;
+  border-radius: 3px;
+}
+
+.new {
+  display: none;
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 60px;
+  height: 59px;  
+  background-image: url(../images/new-flag.png);
+}
+
+.new-active{
+  display: block;
+}
+
+.top .future:first-child{
+  background-image: url(../images/icon-1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 213px;
+  background-color: #ffbf47;
+}
+
+.top .future:nth-child(2){
+  background-image: url(../images/icon-2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 197px;
+  background-color: #3bbce3;
+}
+
+.top .future:nth-child(3){
+  background-image: url(../images/icon-3.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 191px;
+  background-color: #dc91d8;
+}
+
+.bottom .future{
+  background-image: url(../images/icon-4.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 196px;
+  background-color: #8ed78f;
+}
+
+.bottom .future:last-child{
+  background-image: url(../images/icon-5.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 191px;
+  background-color: #ffc047;
+}
+
+.future:first-child button{
+  background-color: #e5ac40;
+}
+
+.future:nth-child(2) button{
+  background-color: #35a9cc;
+}
+
+.future:last-child button{
+  background-color: #c682c2;
+}
+
+.bottom:last-child button{
+  background-color: #e5ac40;
+}
+
+button[На все случаи жизни]{
+  background-color: #80c180;
+}
+
+
+
+
